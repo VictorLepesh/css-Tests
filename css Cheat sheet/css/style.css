@@ -1,6 +1,41 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
 body {
     background-color:#444444;
     color: #ffffff;
 
-    font: normal 32px, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:normal;
+    /* same as above */
+    font: normal 16px, Arial, Helvetica, sans-serif;
+
+    line-height:2em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.best-box {
+    background-color: #333;
+
+    border-top: 20px blue solid;
+    border-right: 20px blue solid;
+    border-bottom: 20px blue solid;
+    border-left: 20px blue solid;
+    /*same as above*/
+    border: 20px blue solid;
+
+    border-width: 5px;
+    border-bottom-width: 10px;
+    border-top-style:ridge;
+
+    padding-top: 0px;
+
+    margin-top: 20px;
 }
