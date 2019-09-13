@@ -39,3 +39,36 @@ body {
 
     margin-top: 20px;
 }
+
+.best-box h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.poem-2 {
+    border: 4px dotted #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.places {
+    border: 2px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px
+}
+
+.places h2 {
+    text-align:center;
+}
+
+.places ul {
+    padding: 0;
+    list-style: square;
+    list-style: none;
+}
