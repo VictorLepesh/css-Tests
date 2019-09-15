@@ -8,12 +8,12 @@ body {
     color: #ffffff;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
+    font-size:16px;
     font-weight:normal;
     /* same as above */
     font: normal 16px, Arial, Helvetica, sans-serif;
 
-    line-height:2em;
+    line-height:1.6em;
     margin: 0;
 }
 
@@ -32,6 +32,10 @@ a:active{
 
 a:visited{
     /* color:black; */
+}
+
+.clr {
+    clear:both;
 }
 
 .container {
@@ -86,7 +90,7 @@ a:visited{
 
 .places ul {
     padding: 0;
-    padding-left: 20px;
+    padding-left: 30px;
     list-style: square;
     list-style: none;
 }
@@ -133,6 +137,75 @@ we are applying to all buttons */
     background-color: blue;
     color: #fff;
 }
+
+.block {
+    float:left;
+    width: 33.3%; /*Because there's 3 of them*/
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing:border-box; /* will fix the width and padding problem*/
+}
+
+#main-block {
+    float:left;
+    width:70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float:right; /* adjusts where it'd be compared to other content*/
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Positioning in CSS
+    - static : the default
+    - relative : relative to normarl position, add properties like 
+                top, left, right bottom
+    - Absolute : target whatever position we want in a relative element
+    - Fixed : fixed position to the browser window, will always be in the same
+                position no matter what.
+    - Initial : set the property to its default 
+    - Inherit : inherits parent property
+*/
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #800;
+    margin-top: 30px;
+    position: relative; /* needs to be here for
+                .p-box h1{
+                    position:absolute;
+                    top:40px
+                to work */
+    background-image:url("../images/blue-circle.jpeg");
+    background-size: 100%;
+}
+
+.p-box h1{
+    position:absolute;
+    top:40px;
+    left: 500px;
+}
+
+.p-box h2{
+    position:absolute;
+    bottom: 100px;
+    right: 20px;
+}
+
+.fix-me {
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    padding-bottom: 40px;
+}
+/* Fixed position is perfect for things like a navbar */
 
 #bottom {
     margin-top: 500px;
