@@ -207,6 +207,21 @@ we are applying to all buttons */
 }
 /* Fixed position is perfect for things like a navbar */
 
+/* :first-child is something called a pseudo class, looks like
+a method */
+.money-nickname-list li:first-child{
+    background: blue;
+}
+.money-nickname-list li:last-child{
+    background: greenyellow;
+}
+.money-nickname-list li:nth-child(3){
+    background: fuchsia;
+}
+.money-nickname-list li:nth-child(even){
+    background: green;
+}
+
 #bottom {
     margin-top: 500px;
 }
