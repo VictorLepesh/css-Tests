@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.box {
+    background: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto; /* to go in the middle*/
+    top: 200px;
+    transition-property: background, border-radius, transform; /* will fade in background */
+                /* instead of background and border-radius you can put all for everything in
+                    .box:hover */
+    
+    transition-duration: 3s, 6s; /* total animation time */ /*3s for backgound AND 6s for border-radius, both same time*/
+    /*transition-delay: 2s, 4s; /* will delay each anim for 2s if just 1 arg,  will delay background by 2s and border-radius by 4s*/
+    transition-timing-function: linear; /* can do ease-in, etc */
+}
+
+.box:hover { /* hold the click for :active */
+    background-color: rgb(49, 16, 235);
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
