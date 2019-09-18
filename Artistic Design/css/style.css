@@ -1,0 +1,18 @@
+body {
+    background: #555;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.titleHeader {
+    background: orangered;
+    background-color: aqua;
+    text-align: center;
+    margin: 0;
+    height: 60px;
+}
+
+.square {
+    background: white;
+}
+
