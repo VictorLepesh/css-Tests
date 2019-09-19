@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display:grid;
+    grid-template-columns: 70% 30%;
+
+    /* we can use below instead of adding margins */
+    /*grid-column-gap: 1em;
+    grid-row-gap: 1em;*/
+
+    /*instead of using what's above we can use */
+    grid-gap: 1em;
+}
+
+.wrapper > div {
+    background: #333;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: #ddd;
+}

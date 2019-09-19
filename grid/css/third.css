@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display:grid;
+
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: start; /* will align the divs on the left horizontally */
+    justify-items: center; /* will align the divs in the center horizontally*/
+    justify-items: end; /* will align the divs on the end horizontally*/
+    justify-items: stretch; /* the default, will stretch them in the boxes horizontally*/
+    align-items: start; /* will align the divs on the left vertically */
+    align-items: stretch; /* default */
+
+    /* last rule is what is ran */
+}
+
+.wrapper > div {
+    background: #333;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: #555;
+}
+
+.wrapper > div:nth-child(3) {
+    background: #fe0;
+}
+
+ .box1 {
+    /*align-self: start; */
+    grid-column: 1/3; /* span from 1 to 3 / stretch from line 1 to line 3*/
+    grid-row: 1/3;
+ }
+
+ .box2 {
+    /* align-self:end; */
+    grid-row: 1/3;
+ }
+
+ .box3 {
+    justify-self: start;
+    grid-column: 1;
+    grid-row: 2/4;
+    border: 1px solid #000;
+    border-left-width: 0;
+ }
+
+ .box4 {
+    grid-column: 2/4;
+ }
