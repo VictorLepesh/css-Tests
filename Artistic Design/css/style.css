@@ -1,18 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: #555;
     line-height: 1.6em;
     margin: 0;
 }
 
-.titleHeader {
-    background: orangered;
-    background-color: aqua;
+.clr {
+    height: 5px;
+}
+
+.nav {
+    background: #77f;
+    border-color: red;
+    height: 50px;
+}
+
+.nav ul{
+    transform: translateY(5px);
+    display: grid;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.nav li{
+    display: inline;
+    width: 80%;
+}
+
+.listItem {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: 0.5em;
+    width: auto;
     text-align: center;
-    margin: 0;
-    height: 60px;
 }
 
-.square {
-    background: white;
+.listItem:hover {
+    background-color: grey;
+    border-color: white;
 }
 
+.skills {
+    transform: translate(10vw, 2px);
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(148, 142, 142);
+}
+
+.para {
+    background-color: red;
+    display: inline-block;
+    transform: translate(5px, 5px);
+    width: auto;
+    animation-name: pSlide;
+    animation-duration: 3s;
+}
+
+.contact {
+    transform: translateX(10vw);
+    width: 80vw;
+    height: minmax(500px, auto);
+    background-color: rgb(148, 142, 142);
+}
+
+.contact .cpara {
+    transform: translateX(calc(50vw - 50%));
+}
+
+.contact p {
+    padding: 20px;
+    animation-name: pSlide;
+    animation-duration: 2s;
+}
+
+.other {
+    background-color: rgb(148, 142, 142);
+    transform: translateX(10vw);
+    width: 80vw;
+}
+
+.other p {
+    padding: 10px;
+    animation-name: pSlide;
+    animation-duration: 1s;
+}
+
+@keyframes pSlide {
+    0% {
+        transform: translateX(-100vw);
+
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.other ul {
+    padding-left: 20px;
+}
+
+.other .spinner {
+    list-style-type: square;
+    animation-name: spin;
+    animation-duration: infinite;
+}
+
+@keyframes spin {
+    
+}
