@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex; /* to make them appear next to eachother */
+    justify-content: space-around; /* not going to center, just add space*/
+    align-items: center; /* center vertically */
+    min-height: 8vh;
+    background-color: rgb(95, 107, 182);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around; 
+    width: 30%; /* needs width for space-around to actually put space in between the buttons */
+    
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(182, 178, 178);
+    font-size: 1.2em;
+    letter-spacing: 3px;
+}
+
+.logo {
+    color: rgb(182, 178, 178);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.4em;
+}
+
+.burgerIcon {
+    display: none;
+}
+
+.burgerLines { /* for mobile */
+    width: 25px;
+    height: 3px;
+    background-color: rgb(182, 178, 178);
+    margin: 5px;
+    font-size: 1.1em;
+
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+    /*.nav-links a {
+        letter-spacing: 2px;
+        font-size: 1.2em;
+    }*/
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* prevents horizontal scroll */
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #505050;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burgerIcon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .burgerLine1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .burgerLine2 {
+    opacity: 0;
+}
+.toggle .burgerLine3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
