@@ -5,20 +5,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-compatible" content="ie-edge">
-        <title>Navigation Bar</title>
         <link rel="stylesheet" type="text/css" href="css/styleRace.css">
+        <title>Navigation Bar</title>
     </head>
     <body>
-        <nav>  
+        <nav>
             <div class="logo">
-                <h4>Nav Bar</h4>
+                <h4>Navigation Logo</h4>
             </div>
-        
-            <ul class="form-links">
+
+            <ul class="nav-links">
                 <li>
-                    <a class="form-item">
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <a class="form-item">
+                    <a href="#">Projects</a>
                 </li>
-                <
+                <li>
+                    <a href="#">Skills</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <div class="burgerIcon">
+                <div class="burgerLines burgerLine1"></div>
+                <div class="burgerLines burgerLine2"></div>
+                <div class="burgerLines burgerLine3"></div>
+            </div>
+        </nav>
+        <script src="js/appRace.js"></script>
+    </s
