@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,7 +9,14 @@ nav {
     justify-content: space-around; /* not going to center, just add space*/
     align-items: center; /* center vertically */
     min-height: 8vh;
-    background-color: rgb(95, 107, 182);
+    background-color: rgb(52, 68, 172);
+}
+
+.logo {
+    color: rgb(182, 178, 178);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.4em;
 }
 
 .nav-links {
@@ -27,12 +34,6 @@ nav {
     letter-spacing: 3px;
 }
 
-.logo {
-    color: rgb(182, 178, 178);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 1.4em;
-}
 
 .burgerIcon {
     display: none;
