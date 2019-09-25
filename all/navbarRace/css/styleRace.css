@@ -9,5 +9,23 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    
+    background-color: rgb(0, 0, 50);
+}
+
+.logo {
+    color: rgb(180, 180, 180);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.4em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decorat
 }
