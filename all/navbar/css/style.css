@@ -5,51 +5,50 @@
 }
 
 nav {
+    background-color: rgb(52, 68, 172); /* 52, 0, 0 and 52, 68, 172 are a good color */
     display: flex; /* to make them appear next to eachother */
     justify-content: space-around; /* not going to center, just add space*/
     align-items: center; /* center vertically */
     min-height: 8vh;
-    background-color: rgb(52, 68, 172); /* 52, 0, 0 and 52, 68, 172 are a good color */
 }
 
 .logo {
     color: rgb(182, 178, 178);
+    font-size: 1.4em;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 1.4em;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around; 
-    width: 30%; /* needs width for space-around to actually put space in between the buttons */
+    width: 50%; /* needs width for space-around to actually put space in between the buttons */
     list-style-type: none;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: rgb(182, 178, 178);
     font-size: 1.2em;
+    text-decoration: none;
     letter-spacing: 3px;
 }
-
 
 .burgerIcon {
     display: none;
 }
 
 .burgerLines { /* for mobile */
+    background-color: rgb(182, 178, 178);
     width: 25px;
     height: 3px;
-    background-color: rgb(182, 178, 178);
     margin: 5px;
     font-size: 1.1em;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
+    .nav-links { 
+        width: 60%; 
     }
     .nav-links a {
         font-size: 1.2em;
@@ -87,6 +86,7 @@ nav {
 }
 
 @keyframes navLinkFade {
+    
     from {
         opacity: 0;
         transform: translateX(50px);
