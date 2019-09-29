@@ -59,12 +59,12 @@ nav {
         background-color: #505050;
         position: absolute;
         right: 0px;
-        height: 92vh;
         top: 8vh;
+        height: 92vh;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
         transform: translateX(100%); /* to move offscreen */
         transition: transform 0.5s ease-in;
     }
