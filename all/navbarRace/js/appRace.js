@@ -7,13 +7,13 @@ const navSlide = () => {
         nav.classList.toggle("nav-active");
 
         navLinks.forEach((link, index) => {
-            if (link.style.animatino) {
+            if (link.style.animation) {
                 link.style.animation = "";
             } else {
-                link.style.animatino = `navLinkFade 0.5s ease forwards ${index /7 + 1.5}s`;
+                link.style.animation = `navLinkFade 0.5s forwards ease ${index / 7 + 1.5}s`
             }
         });
-        burgerIcon.class.toggle("nav-active");
+        burgerIcon.classList.toggle("toggle");
     });
 }
 
