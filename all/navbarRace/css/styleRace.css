@@ -5,39 +5,39 @@
 }
 
 nav {
-    background-color: rgb(0, 0, 50);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: rgb(0, 0, 50); /* 52, 0, 0 and 52, 68, 172 are a good color */
+    display: flex; /* to make them appear next to eachother */
+    justify-content: space-around; /* not going to center, just add space*/
+    align-items: center; /* center vertically */
     min-height: 8vh;
 }
 
 .logo {
     color: rgb(180, 180, 180);
-    text-transform: uppercase;
     font-size: 1.4em;
+    text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
-    width: 60%;
+    justify-content: space-around; 
+    width: 60%; /* needs width for space-around to actually put space in between the buttons */
     list-style-type: none;
 }
 
 .nav-links a {
     color: rgb(180, 180, 180);
-    letter-spacing: 3px;
     font-size: 1.2em;
     text-decoration: none;
+    letter-spacing: 3px;
 }
 
 .burgerIcon {
     display: none;
 }
 
-.burgerLines {
+.burgerLines { /* for mobile */
     background-color: rgb(180, 180, 180);
     width: 25px;
     height: 3px;
@@ -53,9 +53,52 @@ nav {
 
 @media screen and (max-width: 768px) {
     body {
-        overflow-x: hidden;
+        overflow-x: hidden; /* prevents horizontal scroll from transform: translateX(100%); */
     }
     .nav-links {
-        posi
+        background-color: #505050;
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        height: 92vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%); /* to move offscreen */
+        transition: transform 0.5s ease-in;
     }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burgerIcon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .burgerLine1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .burgerLine2 {
+    opacity: 0;
+}
+.toggle .burgerLine3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
