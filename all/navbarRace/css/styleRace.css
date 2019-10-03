@@ -58,7 +58,7 @@ nav {
     .nav-links {
         background-color: #505050;
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 8vh;
         height: 92vh;
         width: 50%;
@@ -78,11 +78,10 @@ nav {
 }
 
 .nav-active {
-    transform: translateX(0%);
+    transform: translateX(0);
 }
 
 @keyframes navLinkFade {
-    
     from {
         opacity: 0;
         transform: translateX(50px);
