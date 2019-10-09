@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How do we just make a simple response in the shortest way possible? 
+
+
+Ans: 1_ref_simple_response.js
+-
+What is http in NodeJS?
+
+
+Ans: A built-in library we can use to make a web server, respond to clients and handle requests.
+-
+What are the request and response arguments from http.createServer?
+
+
+Ans: Objects with methods you can use to check what the client is requesting and respond to that client.
+-
+What do you need at the end of http.createServer()?
+
+
+Ans: .listen(portNumber); for requests
+-
+How do you respond with a response code, mime/content type and custom status code message?
+
+
+Ans: 2_ref_response_code_MIME_type.js
+-
+What are the parameters of response.writehead?
+
+
+Ans: (responseCodeNum, responseCodeCommentStr, ContentMimeTypeObj)
+-
+How do you write multiline HTML in NodeJS?
+
+
+Ans: 3_ref_multi_line_html.js
+
+
