@@ -3,7 +3,7 @@ const qs = require("querystring");
 const port = 8000;
 // Enctype 
 const formOne = "<html lang=\"en-US\">" +
-                    "<form method=\"post\" action=\"inbound\" 
+                    "<form method=\"post\" action=\"inbound\""; 
 const formTwo = '<html><body>'
 + '<h1>XYZ Repository Commit Monitor</h1>'
 + '<form method="post" action="inbound" enctype="application/x-www-form-urlencoded"><fieldset>'
