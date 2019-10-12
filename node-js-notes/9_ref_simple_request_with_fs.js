@@ -1,7 +1,10 @@
 const http = require("http");
 const qs = require("querystring");
 const fs = require("fs");
+const events = require("events");
 const port = 8000;
+
+
 
 let form = "";
 fs.readFile("9_form.html", (err, data) => {
@@ -18,21 +21,16 @@ fs.readFile("methodNotSupported.html", (err, data) => {
     methodNotSupported = data;
 })
 
-const passUsernameToClient = (username) => {
-    let str = ""
-    fs.readFile("9_passUserToClient.html", (err, data) => {
-        str = data
-        console.log(data);
-    })
-    let userlabelLeng = "username: ".length;
-    let usernamePosition = str.indexOf("username: ") + userlabelLeng;
-    let firstSlice = str.slice(0, usernamePosition);
-    let documentLeng = str.length;
-    let secondSlice = str.slice(usernamePosition, documentLeng);
-    console.log(username + " |0| " + userlabelLeng + " |1| " + usernamePosition + " |2| " + firstSlice + " |3| " + documentLeng + " |4| " + secondSlice);
-    return firstSlice + str + secondSlice;
+const insertInStringifiedFile = (fileString, locationString, insertStr) => {
+    let SliceBeforeInsert = fileString.slice(0, fileString.indexOf(locationString) + locationString.length);
+    let SliceAfterInsert = fileString.slice(SliceBeforeInsert.length, fileString.length);
+    return SliceBeforeInsert + insertStr + SliceAfterInsert;
 }
-                            
+
+const passUsernameToClient = (fileStr, location, username) => {
+    fileStr = String(fileStr);
+    return insertInStringifiedFile(fileStr, location, username);
+}
 
 http.createServer((request, response) => {
     if ( request.method === "GET" ) {
@@ -41,7 +39,6 @@ http.createServer((request, response) => {
     } else if ( request.method === "POST" ) {
         let requestBody = ""
         request.on("data", (data) => { 
-            console.log(requestBody);
             requestBody = String(data);
             if (requestBody.length > 1e7 ) {
                 response.writeHead(413, "Request is too large", { "Content-Type" : "text/html" });
@@ -49,12 +46,14 @@ http.createServer((request, response) => {
             }
         });
         request.on("end", () => {
-            let formData = qs.parse(requestBody); // Will give us the value from <input> but leave out <input>'s name
+            let formData = qs.parse(requestBody); 
             response.writeHead(200, { "Content-Type" : "text/html" });
-            let dataUsername = passUsernameToClient(formData.userName);
-            response.write(form);
-            response.write("</br></br>");
-            response.end(dataUsername);
+            let control = false;
+            fs.readFile("9_passUserToClient.html", (err, data) => {
+                fileStr = String(data);
+                const dataUsername = passUsernameToClient(fileStr, "username: ", formData.userName);
+                response.end(dataUsername);
+            }) 
         })
     } else {
         response.writeHead(405, "Method not supported", { "Content-Type" : "text/html" });

@@ -1,7 +1,10 @@
 const http = require("http");
 const qs = require("querystring");
 const fs = require("fs");
+const events = require("events");
 const port = 8000;
+
+
 
 let form = "";
 fs.readFile("9_form.html", (err, data) => {
@@ -18,17 +21,18 @@ fs.readFile("methodNotSupported.html", (err, data) => {
     methodNotSupported = data;
 })
 
-const passUsernameToClient = (username) => {
-    let str = ""
-    fs.readFile("9_passUserToClient.html", (err, data) => {
-        str = String(data);
-    })
-    console.log("first " + str);
-    str = str.replace(/username/, "username: " + username);
-    console.log(str);
-    return str;
+const insertInStringifiedFile = (fileString, locationString, insertStr) => {
+    let SliceBeforeInsert = fileString.slice(0, fileString.indexOf(locationString) + locationString.length);
+    let SliceAfterInsert = fileString.slice(SliceBeforeInsert.length, fileString.length);
+    return SliceBeforeInsert + insertStr + SliceAfterInsert;
 }
-                            
+
+const passUsernameToClient = (fileStr, location, username) => {
+    fileStr = fileStr.replace(/username: /, "username: " + username);
+    console.log(fileStr);
+    return fileStr;
+}
+
 
 http.createServer((request, response) => {
     if ( request.method === "GET" ) {
@@ -44,12 +48,14 @@ http.createServer((request, response) => {
             }
         });
         request.on("end", () => {
-            let formData = qs.parse(requestBody); // Will give us the value from <input> but leave out <input>'s name
+            let formData = qs.parse(requestBody); 
             response.writeHead(200, { "Content-Type" : "text/html" });
-            let dataUsername = passUsernameToClient(formData.userName);
-            response.write(form);
-            response.write("</br></br>");
-            response.end(dataUsername);
+            let control = false;
+            fs.readFile("9_passUserToClient.html", (err, data) => {
+                fileStr = String(data);
+                const dataUsername = passUsernameToClient(fileStr, "username: ", formData.userName);
+                response.end(dataUsername);
+            }) 
         })
     } else {
         response.writeHead(405, "Method not supported", { "Content-Type" : "text/html" });
