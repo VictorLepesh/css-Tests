@@ -21,12 +21,6 @@ fs.readFile("methodNotSupported.html", (err, data) => {
     methodNotSupported = data;
 })
 
-const insertInStringifiedFile = (fileString, locationString, insertStr) => {
-    let SliceBeforeInsert = fileString.slice(0, fileString.indexOf(locationString) + locationString.length);
-    let SliceAfterInsert = fileString.slice(SliceBeforeInsert.length, fileString.length);
-    return SliceBeforeInsert + insertStr + SliceAfterInsert;
-}
-
 const passUsernameToClient = (fileStr, location, username) => {
     fileStr = fileStr.replace(/username: /, "username: " + username);
     console.log(fileStr);
