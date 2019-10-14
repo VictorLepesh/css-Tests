@@ -43,6 +43,11 @@ How do you respond with a response code, mime/content type and custom status cod
 
 Ans: 2_ref_response_code_MIME_type.js
 -
+How do you check the network tab in the Firefox browser?
+
+
+Ans: CTRL + Shift + E then CTRL + R
+-
 What are the parameters of response.writehead?
 
 
@@ -52,4 +57,8 @@ How do you write multiline HTML in NodeJS?
 
 
 Ans: 3_ref_multi_line_html.js
+-
+How do you write multiline HTML in one string in NodeJS?
 
+Ans: 4_ref_multi_line_html_one_string.js
+-
