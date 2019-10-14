@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-color: #666;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+.grid-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.clr {
+    height: 10px;
+}
+
+
+.grid-wrapper .grid-top {
+    background: #888;
+    border: 1px solid #000;
+}
+
+.grid-wrapper .grid-item {
+    background: #333;
+    border: 1px solid #000;
+}
+
+.grid-wrapper > div {
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.container > .raceLabel {
+    white-space: nowrap;
+    background-color: red;
+    padding-bottom: 2px;
+}
