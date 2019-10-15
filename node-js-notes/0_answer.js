@@ -34,9 +34,11 @@ const passUsernameToClient = (username) => {
 
 
 http.createServer((request, response) => {
-    if ( request.method = 'POST') {
-        request('end') .then (
-            
-        )
+    if ( request.method === "GET" ) {
+        response.writeHead(200, { 'Content-Type' : 'text/html' });
+        response.end(form);
+    } else if ( request.method === "POST" ) {
+        let requestBody = qs.parse(data);
+        if ( requestBody > 1e7 )
     }
 })
