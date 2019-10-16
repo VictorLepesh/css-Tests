@@ -62,3 +62,47 @@ How do you write multiline HTML in one string in NodeJS?
 
 Ans: 4_ref_multi_line_html_one_string.js
 -
+-------------
+
+-
+How do you install yarn?
+
+
+npm i yarn --global or npm install yarn --global
+-
+Simple yarn commands
+https://yarnpkg.com/en/docs/usage
+-
+Create-React-App with a Node API.
+https://esausilva.com/2017/11/14/how-to-use-create-react-app-with-a-node-express-backend-api/
+-
+BodyParser and REST example
+https://youtu.be/zoSJ3bNGPp0
+-
+MongoDB, Mongoose, Login, example
+https://youtu.be/WDrU305J1yw
+-
+BodyParser docs
+https://github.com/expressjs/body-parser
+- 
+NodeJS docs
+https://nodejs.org/docs/latest/api/
+-
+NodeJS http module
+https://nodejs.dev/the-nodejs-http-module
+-
+MongoDB Commands Doc 
+https://docs.mongodb.com/manual/reference/command/
+-
+MongoDB Methods Doc 
+https://docs.mongodb.com/manual/reference/method/
+-
+MonogDB guides
+https://docs.mongodb.com/guides/
+-
+Regex Debug/practice
+https://regexr.com/
+-
+Regex with HTML data example
+https://haacked.com/archive/2004/10/25/usingregularexpressionstomatchhtml.aspx/
+
