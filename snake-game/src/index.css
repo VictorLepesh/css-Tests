@@ -21,6 +21,7 @@ code {
   width: 600px;
   height: 600px;
   border: 3px solid #000;
+  z-index: 3;
 }
 
 .snake-dot {
@@ -41,4 +42,18 @@ code {
   background-color: red;
   border: 3px solid #fff;
   z-index: 1;
+}
+
+.game-area .squareGrey {
+  position: absolute;
+  background-color: grey;
+  height: 2%;
+  width: 2%;
+}
+
+.game-area .squareWhite {
+  position: absolute;
+  background-color: grey;
+  height: 2%;
+  width: 2%;
 }
