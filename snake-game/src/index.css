@@ -53,7 +53,7 @@ code {
 
 .game-area .squareWhite {
   position: absolute;
-  background-color: grey;
+  background-color: white;
   height: 2%;
   width: 2%;
 }

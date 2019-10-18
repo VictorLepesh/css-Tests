@@ -52,6 +52,8 @@ class App extends Component {
       case 39:
         this.setState({direction : 'RIGHT'});
         break;
+      default:
+        break;
     }
   }
 
@@ -71,6 +73,8 @@ class App extends Component {
         break;
       case 'UP':
         head = [head[0], head[1] - 2];
+        break;
+      default:
         break;
     }
     dots.push(head);
@@ -92,7 +96,7 @@ class App extends Component {
     let head = snake[snake.length - 1];
     snake.pop();
     snake.forEach(dot => {
-      if (head[0] == dot[0] && head[1] == dot[1]) {
+      if (head[0] === dot[0] && head[1] === dot[1]) {
         this.onGameOver();
       }
     })
@@ -101,7 +105,7 @@ class App extends Component {
   checkIfAte () {
     let head = this.state.snakeDots[this.state.snakeDots.length -1];
     let food = this.state.food;
-    if (head[0] == food[0] && head[1] == food[1]) {
+    if (head[0] === food[0] && head[1] === food[1]) {
       this.setState({
         food: getRandomCoordinates()
       })
@@ -137,22 +141,45 @@ class App extends Component {
     for (let x = 0; x < 10; x++) {
       for (let y = 0; y < 10; y++) {
         if (toggle) {
-          squares.push(<div key={x, y} className="squareGrey"></div>);
+          squares.push(<div className="squareGrey"></div>);
         } else {
-          squares.push(<div key={x, y} className="squareWhite"></div>);
+          squares.push(<div className="squareWhite"></div>);
         }
       }
     }
-    return squares;
+
+    // return squares.map((v, i) => {
+    //   <div className='backgroundGrid' style={ `display: grid;  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr`}></div>
+    // })
+    //return <div className='backgroundGrid' style={ display: 'grid';  grid-template-columns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr'}></div>
   }
 
+
+  // {this.state.squares}
+  // {console.log(this.state.squares)}
   render() {
     return (
       <div className="App">
         <div className="game-area">
           <Snake snakeDots={this.state.snakeDots}/>
           <Food dot={this.state.food}/>
-          {this.state.squares}
+          <div className='backgroundGrid' style={{display: 'grid', position: 'absolute', height: '100%', width : '100%', backgroundColor : 'blue', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr'}}>
+            <div className="squareGrey"></div>
+            <div className="squareWhite"></div>
+            <div className="squareGrey"></div>
+            <div className="squareWhite"></div>
+            <div className="squareGrey"></div>
+            <div className="squareWhite"></div>
+            <div className="squareGrey"></div>
+            <div className="squareWhite"></div>
+            <div className="squareGrey"></div>
+            <div className="squareWhite"></div>
+            <div className="squareGrey"></div>
+            <div className="squareWhite"></div>
+            <div className="squareGrey"></div>
+            <div className="squareWhite"></div>
+            
+          </div>
         </div>
       </div>
     );
@@ -160,3 +187,4 @@ class App extends Component {
 }
 
 export default App;
+
