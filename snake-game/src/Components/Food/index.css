@@ -1,9 +1,9 @@
-.snake-dot {
+.snake-food {
     position: absolute;
     padding: 5px;
     width: 2%;
     height: 2%;
-    background-color: orange;
+    background-color: red;
     border: 3px solid #fff;
-    z-index: 2;
+    z-index: 1;
   }

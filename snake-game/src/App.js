@@ -163,21 +163,28 @@ class App extends Component {
         <div className="game-area">
           <Snake snakeDots={this.state.snakeDots}/>
           <Food dot={this.state.food}/>
-          <div className='backgroundGrid' style={{display: 'grid', position: 'absolute', height: '100%', width : '100%', backgroundColor : 'blue', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr'}}>
-            <div className="squareGrey"></div>
-            <div className="squareWhite"></div>
-            <div className="squareGrey"></div>
-            <div className="squareWhite"></div>
-            <div className="squareGrey"></div>
-            <div className="squareWhite"></div>
-            <div className="squareGrey"></div>
-            <div className="squareWhite"></div>
-            <div className="squareGrey"></div>
-            <div className="squareWhite"></div>
-            <div className="squareGrey"></div>
-            <div className="squareWhite"></div>
-            <div className="squareGrey"></div>
-            <div className="squareWhite"></div>
+          <div className='backgroundGrid' >
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            <div className="square"></div>
+            
             
           </div>
         </div>

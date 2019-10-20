@@ -24,36 +24,29 @@ code {
   z-index: 3;
 }
 
-.snake-dot {
+@import './Components/Snake/index.css';
+
+@import './Components/Food/index.css';
+
+
+/*style={{display: 'grid', position: 'absolute', height: '100%', width : '100%', backgroundColor : 'blue', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr'}}*/
+
+.backgroundGrid {
+  display: grid;
   position: absolute;
-  padding: 5px;
-  width: 2%;
-  height: 2%;
-  background-color: orange;
-  border: 3px solid #fff;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 0;
 }
 
-.snake-food {
-  position: absolute;
-  padding: 5px;
-  width: 2%;
-  height: 2%;
-  background-color: red;
-  border: 3px solid #fff;
-  z-index: 1;
-}
-
-.game-area .squareGrey {
-  position: absolute;
+.backgroundGrid > .square {
   background-color: grey;
-  height: 2%;
-  width: 2%;
+  padding: 1em;
 }
 
-.game-area .squareWhite {
-  position: absolute;
-  background-color: white;
-  height: 2%;
-  width: 2%;
+.backgroundGrid > .square:nth-child(odd) {
+  background: #ddd;
 }
