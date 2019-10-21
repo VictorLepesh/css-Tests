@@ -37,14 +37,13 @@ code {
   height: 100%;
   width: 100%;
   background-color: blue;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(50, 1fr);
+  grid-template-rows: repeat(50, 1fr);
   grid-gap: 0;
 }
 
 .backgroundGrid > .square {
   background-color: grey;
-  padding: 1em;
 }
 
 .backgroundGrid > .square:nth-child(odd) {

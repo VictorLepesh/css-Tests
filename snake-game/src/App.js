@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './index.css';
 import Snake from './Components/Snake/Snake';
 import Food from './Components/Food/Food';
+const Node = require('react-if-comp');
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -29,6 +30,7 @@ class App extends Component {
     setInterval(this.moveSnake, 500);
     document.onkeydown = this.onKeyDown;
     this.setState({squares: this.setSquares()});
+    this.setSquares();
   }
 
   componentDidUpdate() {
@@ -135,57 +137,37 @@ class App extends Component {
     this.setState(initialState);
   }
 
-  setSquares() {
-    let squares = [];
-    let toggle = true;
-    for (let x = 0; x < 10; x++) {
-      for (let y = 0; y < 10; y++) {
-        if (toggle) {
-          squares.push(<div className="squareGrey"></div>);
-        } else {
-          squares.push(<div className="squareWhite"></div>);
-        }
-      }
-    }
+   setSquares() {
+     let squares = [];
+     for (let x = 0; x < 50; x++) {
+       //for (let y = 0; y < 10; y++) {
+           squares.push(x);
+      // }
+     }
+     this.setState({squares: squares})
+   }
 
-    // return squares.map((v, i) => {
-    //   <div className='backgroundGrid' style={ `display: grid;  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr`}></div>
-    // })
-    //return <div className='backgroundGrid' style={ display: 'grid';  grid-template-columns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr'}></div>
-  }
-
-
-  // {this.state.squares}
-  // {console.log(this.state.squares)}
   render() {
+    
     return (
       <div className="App">
         <div className="game-area">
           <Snake snakeDots={this.state.snakeDots}/>
           <Food dot={this.state.food}/>
           <div className='backgroundGrid' >
+              <div>
+              {this.state.squares.map((thing) => (
+                  <Node 
+                    if={thing}
+                    then={<div>{thing}</div>}
+                  />
+              ))} 
+              </div>
             <div className="square"></div>
             <div className="square"></div>
             <div className="square"></div>
             <div className="square"></div>
             <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            
-            
           </div>
         </div>
       </div>
