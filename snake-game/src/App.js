@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './index.css';
 import Snake from './Components/Snake/Snake';
 import Food from './Components/Food/Food';
-const Node = require('react-if-comp');
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -155,14 +154,11 @@ class App extends Component {
           <Snake snakeDots={this.state.snakeDots}/>
           <Food dot={this.state.food}/>
           <div className='backgroundGrid' >
-              <div>
               {this.state.squares.map((thing) => (
-                  <Node 
-                    if={thing}
-                    then={<div>{thing}</div>}
-                  />
-              ))} 
-              </div>
+                <div>{thing}</div>
+              ))}
+              <div>{this.state.squares[0]}</div>
+              <div>{this.state.squares[1]}</div>
             <div className="square"></div>
             <div className="square"></div>
             <div className="square"></div>
