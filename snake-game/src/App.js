@@ -19,7 +19,7 @@ const initialState = {
     [0, 0],
     [2, 0]
   ],
-  squares: 'none'
+  squares: []
 }
 
 class App extends Component {
@@ -140,7 +140,7 @@ class App extends Component {
      let squares = [];
      for (let x = 0; x < 50; x++) {
        //for (let y = 0; y < 10; y++) {
-           squares.push(x);
+           squares.push({x});
       // }
      }
      this.setState({squares: squares})
@@ -154,16 +154,11 @@ class App extends Component {
           <Snake snakeDots={this.state.snakeDots}/>
           <Food dot={this.state.food}/>
           <div className='backgroundGrid' >
-              {this.state.squares.map((thing) => (
-                <div>{thing}</div>
-              ))}
-              <div>{this.state.squares[0]}</div>
-              <div>{this.state.squares[1]}</div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
-            <div className="square"></div>
+              {
+                this.state.squares.map((thing, index) => {
+                  return ( <div className="square" key={index}></div> );
+                })
+              }
           </div>
         </div>
       </div>
