@@ -9,3 +9,4 @@ let t1 = performance.now();
 let result = addUpTo(1000000000);
 let t2 = performance.now();
 console.log(`Total passed: ${(t2 - t1) / 1000} seconds.`);
+

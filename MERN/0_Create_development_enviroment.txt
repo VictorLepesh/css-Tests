@@ -1,0 +1,23 @@
+1. Create a directory with mkdir name
+2. cd into that director
+3. npm init
+4. Press enter for everything but name the entry point for the serverside, ex: server.js
+5. npm i concurrently (or npm i concurrently express)
+6. npm i nodemon --save-dev (The save-dev option saves it as a developer dependency)  What Nodemon does is auto update your pages everytime they change.
+7. In package.json in "scripts" add "start": "node server.js" to start the serverside. and "server": "nodemon server.js" which will use nodemon
+8. Create a file called server.js
+9. Put something like the following inside server.js 
+//
+const http = require("http")
+const port = 3000;
+
+http.createServer((request, response) => {
+    console.log("server started on port " + port);
+    response.end("Hello");
+}).listen(port);
+//
+10. Open a new terminal.  In VSC you can use CTRL + Shift + ` then click a directory to start in.  Or click the plus sign in the menu on CTRL + `
+11. npm i -g create-react-app or if on a Linux distro sudo npm i -g create-react-app
+12. create-react-app client // Client is the name of the directory for our React App
+13. Open up the package.json in client/package.json 
+14. Within the root object, add another object call "proxy": "http://localhost:5000"

@@ -1,0 +1,28 @@
+For Adobe XD from Adobe XD
+1. Download and install Adobe XD.
+2. Open Adobe XD
+3. Click the Add-ons tab
+4. Make sure you're on All Plugins
+5. Look up "lightning storm".
+6. Install Lightning Storm.
+-- Chances are this version will be outdated
+
+For Adobe XD from ExportKit.com/downloads directly
+1. Download and install Adobe XD.
+2. go to http://exportkit.com/downloads
+3. Click "Download" in the "[XD] Plugin CC2019" section.
+4. Login or register if needed
+5. Go repeat steps 2 and 3 if needed.
+6. Extract fies to documents
+7. Double click the .xdx file to extract.
+8. If needed replace the older version of the plugin.
+
+
+For using ExportKit/Lightning Storm on Adobe XD 
+1. Open an .xd file either through your computer or the cloud.
+2. CTRL + SHIFT + P or click the bottom left icon
+3. Click Lightning Storm
+4. Click the dropdown menu to adjust to HTML, CSS, JS, etc. 
+5. Export
+
+
