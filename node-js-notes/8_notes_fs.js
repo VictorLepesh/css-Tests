@@ -4,7 +4,7 @@ const fs = require("fs") // File System
 http.createServer((req, res) => {
     fs.readFile("8_demo.html", (error, data) => {
         res.writeHead(200, { "Content-Type" : "text/html" });
-        console.log("" + data);
+        console.log('' + data);
         res.end(data);
     })
 }).listen(8000);
@@ -35,7 +35,7 @@ fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
 
 //  All methods to just update a file
 
-// WIll put at the end of the file or "append"
+// Will put at the end of the file or "append"
 fs.appendFile('mynewfile1.txt', ' This is my text.', function (err) {
     if (err) throw err;
     console.log('Updated!');

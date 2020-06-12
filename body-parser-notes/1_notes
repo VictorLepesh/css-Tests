@@ -1,0 +1,325 @@
+Made and updated by the same people who work on ExpressJS as a middleware for NodeJS.
+
+https://github.com/expressjs/body-parser
+
+installation: npm install body-parser
+
+https://www.cram.com/flashcards/body-parser-11488171
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What does the body-parser middleware not handle?
+
+ans: multipart bodies due to their complex nature.
+
+
+What does the body-parser middleware handle?
+
+ans: JSON, Raw, Text and URL Form bodies.
+
+
+What are all the methods body-parser has?
+
+ans: bodyParser.json(), bodyParser.raw(), bodyParser.text(), bodyParser.urlencoded()
+
+
+What does [options] represent in the documentation for the bodyParser methods?
+
+ans: An object.
+
+
+How do you get the bodyParser object?
+
+ans: assign it with: const bodyParser = require('body-parser')
+
+
+What does populate mean?
+
+To fill (an empty field or array) with data.
+
+
+What property will the middleware populate?
+
+ans: req.body
+
+
+When will req.body be populated?
+
+When the Content-Type request header matches the type key(option) or an empty object { }
+
+
+What if there was no body to parse when req.body was being populated?
+
+ans: The Content-Type was not matched or an error occurred.
+
+
+What does the bodyParser.json() method do?
+
+ans: Only middleware that only parses json 
+
+
+What does bodyParser.json only look at?
+
+ans: The requests where the Content-Type header matches the type key(option).
+
+
+What does the json parser accept?
+
+ans: Any Unicode encoding of the body and supports the automatic inflation of gzip and deflat encodings.
+
+
+For the json method, a new body object containing the parsed data is populated on..?
+
+ans: The request object after the middleware i.e. body.
+
+
+What are all the UNIQUE keys in options for bodyParser.json?
+
+ans: reviver, strict
+
+
+What does the reviver key(option) do?
+
+ans: The reviver key(option) is passed directly to the JSON.parse as the second argument.
+
+
+What method is the reviver key(option) for?
+
+ans: bodyParser.json()
+
+
+Where do you find more information about JSON.parse?
+
+ans: Look up MDN JSON.parse()
+
+
+What does the strict key(option) do?
+
+ans: When set to true, it will only accept arrays and objects; when false it will accept anything JSON.parse accepts.
+
+
+What's the default of the strict key(option)?
+
+ans: true
+
+
+What method is the strict key(option) for?
+
+ans: bodyParser.json()
+
+
+What does the bodyParser.raw() method do?
+
+ans: Returns middleware that parses all bodies as a buffer.
+
+
+What does the bodyParser.raw() method look at?
+
+ans: The requests where the Content-Type header matches the type key(option).
+
+
+What encodings does bodyParser.raw() support?
+
+ans: automatic inflation of gzip and deflate encodings.
+
+
+For the raw method, a new body object containing the parsed data is populated on..?
+
+ans: The request object after the middleware i.e. body.  This will be a Buffer object of the body.
+
+
+What are all the UNIQUE keys in options for bodyParser.raw?
+
+ans: The raw method has no unique keys.
+
+
+What does the bodyParser.text() method do?
+
+ans: Returns middleware that parses all bodies as a string.
+
+
+What does bodyParser.text() look at?
+
+ans: Requests where the Content-Type header matches the type option.
+
+
+What does the text parser support?
+
+ans: The automatic inflation of gzip an deflate encodings.
+
+
+For the text method, a new body string containing the parsed data is populated on..?
+
+ans: The request object after the middleware i.e. body. This will be a string of the body.
+
+
+What are all the UNIQUE keys in options for bodyParser.text?
+
+ans: defaultCharset
+
+
+What does the defaultCharset key(option) do?
+
+ans: Specify the default character set for the text content if the charset is not specified in the Content-Type header of the request.
+
+
+What method is the defaultCharset key(option) for?
+
+ans: bodyParser.text()
+
+
+What value does the defaultCharset default to and why?
+
+ans: utf-8
+
+
+What does bodyParser.urlencoded() do?
+
+ans: Returns middleware that only parses urlencoded bodies.
+
+
+What does the bodyParser.urlencoded() method look at?
+
+ans: The requests where the Content-Type header matches the type option.
+
+
+What does the bodyParser.urlencoded() only accept?
+
+ans: UTF-8 encoding of the body.
+
+
+What does the bodyParser.urlencoded() support?
+
+ans: automatic inflation of gzip and deflate encodings.
+
+
+For the urlencoded method, a new body object containing the parsed data is populated on..?
+
+ans: The request object after the middleware i.e. body. This object will contain key-value pairs, where the value can be a string, array or any type.
+
+
+What types of values will the body object contain when the urlencoded is used?
+
+ans: A string or array when extended is false, or any type when extended is true.
+
+
+What does the extended key(option) do?
+
+ans: Allows to choose between parsing the URL-encoded data with the querystring library(when false) or qs library(when true).
+
+
+What does the "extended" sytax allow?
+
+ans: For rich objects and arrays to be encoded into the URL-encoded format, allowing for a JSON-like experience with the URL-encoded. 
+
+
+What method is the extended key(option) for?
+
+ans: bodyParser.urlencoded()
+
+
+What does extended default to?
+
+ans: true but using the default has been deprecated.
+
+
+What does the parameterLimit key(option) do?
+
+ans: Control the maximum number of parameters that are allowed in the URL-econded data.
+
+
+What method is the parameterLimit key(option) for?
+
+ans: bodyParser.urlencoded
+
+
+What happens if a client has more arguments than the value for the parameterLimit key?
+
+ans: 413 will be returned to the client.
+
+
+What does parameterLimit default to?
+
+ans: 1000
+
+
+What are all the global keys(options)?
+
+ans: inflate, limit, type, verify
+
+
+What does the inflate key(option) do?
+
+ans: When set to true, then deflated(compressed) bodies will be inflated; when false, deflated bodies are rejected.
+
+
+What's the default value of the inflate key(option)?
+
+ans: true
+
+
+What method is inflate for?
+
+ans: All methods
+
+
+What does the limit key(option) do?
+
+ans: Controls the maximum request body size.  If this is a number, then the value specifies the number of bytes; if it is a string, the value is passed to the bytes library for parsing.
+
+
+What's the default value of the limit key(option)?
+
+ans: '100kb'
+
+
+What method is limit for?
+
+ans: All methods
+
+
+What does the type key(option) do?
+
+ans: It's used to determine what media type the middleware will parse.  This option can be a string, array of strings, or a function.
+
+
+If a function isn't the value for the type key(option)..?
+
+ans: The type option is passed directyl to the type-js library and this can be an extension name(like bin), a mime type(like application/octet-stream), or a mime type with a wildcard(like */* or application/*).
+
+
+If a function is the value for the type key(option)..?
+
+ans: The type option is called as fn(req) and the request is parsed if it returns a truthy value.
+
+
+What's the default for the type key(option)?
+
+ans: application/octet-stream
+
+
+What method is type for?
+
+ans: All methods
+
+
+What does the verify key(method) do?
+
+ans: If supplied, is called as verify(req, res, buf, encoding), where buf is a Buffer of the raw request body and encoding is the encoding of the request.
+
+
+How can can parsing be aborted?
+
+ans: By throwing an error.

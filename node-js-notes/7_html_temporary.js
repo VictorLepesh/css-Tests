@@ -29,31 +29,3 @@ const passUsernameToClient = (username) => {
                 </html>`
     return str;
 }
-
-http.createServer((request, response) => {
-    if (request.method === "GET") {
-        response.writeHead(200, {"Content-Type": "text/html"});
-        response.end(form);
-    } else if (request.method === "POST") {
-        let requestBody = ""
-        request.on("data", (data) => { 
-            console.log(requestBody);
-            requestBody = String(data);
-            if (requestBody.length > 1e7) {
-                response.writeHead(413, "Request is too large", {"Content-Type": "text/html"});
-                response.end(tooLargeResponse);
-            }
-        });
-        request.on("end", () => {
-            let formData = qs.parse(requestBody); 
-            response.writeHead(200, {"Content-Type": "text/html"});
-            let dataUsername = passUsernameToClient(formData.userName);
-            response.write(form);
-            response.write("</br></br>");
-            response.end(dataUsername);
-        })
-    } else {
-        response.writeHead(405, "Method not supported", {"Content-Type" : "text/html"});
-        response.end(methodNotSupported);
-    }
-}).listen(port);

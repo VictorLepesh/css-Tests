@@ -21,3 +21,5 @@ http.createServer((request, response) => {
 12. create-react-app client // Client is the name of the directory for our React App
 13. Open up the package.json in client/package.json 
 14. Within the root object, add another object call "proxy": "http://localhost:5000"
+15. cd client 
+16. npm start

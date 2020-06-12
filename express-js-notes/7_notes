@@ -1,0 +1,4 @@
+Middleware is a function or program that runs between the time a client sends a request to the time the server sends back a response.
+ex: if you have (request, response) as parameters, you're writing a Middleware 
+
+https://youtu.be/lY6icfhap2o
