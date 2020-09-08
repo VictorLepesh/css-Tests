@@ -1,0 +1,116 @@
+Use all methods in individual scripts.
+Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+
+Constructor
+1. Object()
+
+Static methods
+2. Object.assign()
+3. Object.create()
+4. Object.defineProperty()      Object.getOwnPropertyDescriptor()
+5. Object.defineProperties()    Object.getOwnPropertyDescriptors()
+6. Object.entries()     Object.fromEntries()
+7. Object.freeze()      Object.isFrozen()
+8. Object.getOwnPropertyNames()    Object.keys()   Object.values()
+9. Object.getOwnPropertySymbols()
+10. Object.getPrototypeOf()     Object.setPrototypeOf()     Object.prototype.isPrototypeOf()
+11. Object.is()
+12. Object.isExtensible()       Object.preventExtensions()
+13. Object.isSealed()       Object.seal()
+
+Instance Properties 
+14. Object.prototype.constructor
+
+Instance Methods
+15. Object.prototype.hasOwnProperty()
+16. Object.prototype.propertyIsEnumerable()
+17. Object.prototype.toLocaleString()
+18. Object.prototype.toString()
+19. Object.prototype.valueOf()
+
+
+-----------------------------
+    Constructor
+1. Object()
+
+Static methods
+2. Object.assign()
+3. Object.create()
+4. Object.defineProperty()
+5. Object.defineProperties()
+6. Object.entries()
+7. Object.freeze()
+8. Object.fromEntries()
+9. Object.getOwnPropertyDescriptor()
+10. Object.getOwnPropertyDescriptors()
+11. Object.getOwnPropertyNames()
+12. Object.getOwnPropertySymbols()
+13. Object.getPrototypeOf()
+14. Object.is()
+15. Object.isExtensible()
+16. Object.isFrozen()
+17. Object.isSealed()
+18. Object.keys()
+19. Object.preventExtensions()
+20. Object.seal()
+21. Object.setPrototypeOf()
+22. Object.values()
+
+Instance Properties 
+23. Object.prototype.constructor
+
+Instance Methods
+24. Object.prototype.hasOwnProperty()
+25. Object.prototype.isPrototypeOf()
+26. Object.prototype.propertyIsEnumerable()
+27. Object.prototype.toLocaleString()
+28. Object.prototype.toString()
+29. Object.prototype.valueOf()
+
+
+-----------------------------
+    Constructor
+1. Object()
+
+Static methods
+2. Object.assign()
+3. Object.create()
+4. Object.defineProperty()
+5. Object.defineProperties()
+6. Object.entries()
+7. Object.freeze()
+8. Object.fromEntries()
+9. Object.getOwnPropertyDescriptor()
+10. Object.getOwnPropertyDescriptors()
+11. Object.getOwnPropertyNames()
+12. Object.getOwnPropertySymbols()
+13. Object.getPrototypeOf()
+14. Object.is()
+15. Object.isExtensible()
+16. Object.isFrozen()
+17. Object.isSealed()
+18. Object.keys()
+19. Object.preventExtensions()
+20. Object.seal()
+21. Object.setPrototypeOf()
+22. Object.values()
+
+Instance Properties 
+23. Object.prototype.constructor
+24. Object.prototype.__proto__      dep
+25. Object.prototype.__noSuchMethod__   obsol
+
+Instance Methods
+26. Object.prototype.__defineGetter__() dep
+27. Object.prototype.__defineSetter__() dep
+28. Object.prototype.__lookupGetter__() dep
+29. Object.prototype.__lookupSetter__() dep
+30. Object.prototype.hasOwnProperty()
+31. Object.prototype.isPrototypeOf()
+32. Object.prototype.propertyIsEnumerable()
+33. Object.prototype.toLocaleString()
+34. Object.prototype.toString()
+35. Object.prototype.unwatch()  dep
+36. Object.prototype.valueOf()
+37. Object.prototype.watch()    dep
