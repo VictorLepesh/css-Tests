@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    background-color: slategrey;
+    height: 400px;
+    width: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 40px;
+    align-items: start;
+}
+
+.box {
+    min-height: 20px;
+    background-color: springgreen;
+}
+
+.box:nth-child(odd) {
+    background-color: steelblue;
+}
+/* align-items only meant for flex or grid items in the space of their rows. */
+/* 4 ways for align-items to work. 
+use grid-auto-rows: for grid container and make all grid items have height: X% (no stretch)
+use min-height in grid items (stretch works)
+use min-height in grid items and grid-auto-rows in grid container (stretch works)
+use inner HTML in grid items
+*/
+/* height: breaks align-items: stretch */
+
+/*
+***ANSWERS***
+BASIC KEYWORDS
+align-items: normal; 
+align-items: stretch; 
+
+POSITIONAL ALIGNMENT
+align-items: center; 
+align-items: start;
+align-items: end;
+align-items: flex-start;
+align-items: flex-end;
+
+BASELINE ALIGNMENT
+align-items: baseline; 
+align-items: first baseline; 
+align-items: last baseline; ** Overflow alignment (for positional alignment only) **
+*/
+
+/*** ONLY IN FIREFOX  ***/
+/*
+left & right
+safe & unsafe
+*/

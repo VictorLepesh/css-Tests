@@ -1,0 +1,19 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-duration: 1s;
+    animation-iteration-count: infinite, 1, 5;
+    animation-name: mymove;
+    animation-delay: 2s; /* works before first iteration */
+}
+/*answers: animation-delay: 500ms; 1s; -2s; */
+
+@keyframes mymove { /* mymove is the string name of the animation */
+    from {left: 0px;}
+    to {left: 400px;}
+}
+/* the 4 ingredients to an animation is an at-rule, animation-duration, animation-iteration-count, and animation-name */
+
+/* trying to figure out how to put multiple values for animation-iteration-count */

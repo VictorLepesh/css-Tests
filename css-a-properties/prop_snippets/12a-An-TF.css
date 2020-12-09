@@ -1,0 +1,51 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: mymove;
+    animation-timing-function: steps(6, jump-none);
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+
+/*
+**** ANSWERS **** 
+animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); 
+ease;
+ease-in; 
+ease-in-out; 
+ease-out; 
+linear; 
+step-start; 
+step-end; 
+steps(4, end);
+steps(4, jump-end);
+steps(4, start);
+steps(4, jump-start);
+steps(4, jump-both);
+steps(4, jump-none);
+*/
+
+/* cubic-bezier = 2nd and 4th values are for time, 1st and 3rd values are for progress */
+/* 4 values in CB function makes cubic bezier curve */
+/* use https://cubic-bezier.com to test curves */
+/* ease-in = Starts slow  */
+/* ease-in-out = Starts slow, speeds up middle, ends slow */
+/* ease-out = Ends slow */
+/* linear = Constant speed */
+/* steps-start and step-end = unknown 
+step-start = steps(1, start) change on start of each interval
+step-end = steps(1, end) change on end of each interval*/
+/* steps(4, end) = Waits 1 step, then "teleports" 3 steps */
+/* steps(4, start) = "teleports' immediately and goes 4 steps */ 
+/* steps(4, jump-end) = same as steps(4, end) */
+/* steps(4, jump-start) = same as steps(4, start) */
+/* steps(1, jump-both) = makes it end up in the middle, if more than 1 then it's middle-ish.*/
+/* steps(1, jump-none) = there's a smooth transition, if more than 1 then first interval will be starting position and last interval will be last position */

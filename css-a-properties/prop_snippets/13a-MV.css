@@ -1,0 +1,40 @@
+div {
+    background-color: slategrey;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    animation-name: slideRight, changeColor;
+    animation-duration: 4s, 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both, forwards;
+    animation-play-state: running;
+    animation-direction: alternate, normal;
+    animation-delay: 0s, 4s;
+    animation-timing-function: ease;
+}
+@keyframes slideRight {
+    25% {
+        left: 50px;
+    }
+    50% {
+        left: 400px;
+    }
+    75% {
+        left: 400px;
+        top: 0px;
+    }
+    100% {
+        left: 400px;
+        top: 300px;
+    }
+
+}
+@keyframes changeColor {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+/* MV = Multi Value Animations */

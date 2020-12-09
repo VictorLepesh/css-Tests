@@ -1,0 +1,19 @@
+https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
+https://www.html5rocks.com/en/tutorials/speed/rendering/
+
+A-Properties
+
+1. grid - align-content, align-items, align-self 
+2. flex - align-content, align-items, align-self
+    - need baseline
+        - Baseline NEEDS <h1-6> tags in inner HTML
+    - can't do flex align-items because can't change box height.
+        - flex align-items NEEDS something in inner HTML OR min-height instead of grid-auto-rows
+3. all property
+4. animation shorthand
+5. all animation properties
+    - need to know step-start and step-end
+    - need to know how multiple values for a single animation property works.
+
+
+https://www.digitalocean.com/community/tutorials/css-align-justify

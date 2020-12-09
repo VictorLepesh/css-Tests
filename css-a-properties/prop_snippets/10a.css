@@ -1,0 +1,27 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: mymove;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 400px; background-color: orange;}
+}
+
+
+/* backwards switches "from" to "to" and vice versa color wise */
+/* uncertain what forwards and both does as values */
+/*
+***ANSWERS****
+animation-fill-mode: none; 
+forwards; 
+backwards; 
+both; 
+*/

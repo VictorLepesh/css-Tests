@@ -15,6 +15,7 @@ Static methods
 8. Object.getOwnPropertyNames()    Object.keys()   Object.values()
 9. Object.getOwnPropertySymbols()
 10. Object.getPrototypeOf()     Object.setPrototypeOf()     Object.prototype.isPrototypeOf()
+    - Use Object.create() instead of Object.setPrototypeOf()
 11. Object.is()
 12. Object.isExtensible()       Object.preventExtensions()
 13. Object.isSealed()       Object.seal()

@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    width: 200px;
+    height: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    background-color: aqua;
+    align-content: stretch;
+}
+
+.box:nth-child(even) {
+    background-color: grey;
+}
+.box {
+    background-color: #000000;
+}
+.box1 {
+    height: 50%;
+    align-self: center; /* effects only individual child/ or grid/flex item */
+}

@@ -1,0 +1,16 @@
+/*The point is not use every single value but rather use every TYPE of value */
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 3s infinite normal both running;
+}
+/* reverse, normal will change where it starts, aka animation-direction:  */
+/* for animation-direction: alternate and reverse-alternate will change whether it goes back*/
+/* animation-play-state: paused; running; effects whether it's running or not */
+  
+@keyframes mymove { /* mymove is the string name of the animation */
+    from {left: 0px;}
+    to {left: 400px;}
+}

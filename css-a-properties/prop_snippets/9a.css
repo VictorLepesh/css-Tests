@@ -1,0 +1,22 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: mymove;
+    animation-direction: normal;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 400px;}
+}
+
+/*
+***ANSWERS***
+animation-direction: normal; 
+reverse; 
+alternate; 
+alternative-reverse; */

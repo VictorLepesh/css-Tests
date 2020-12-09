@@ -1,0 +1,110 @@
+1. Grid alignment
+    - align-content
+    center
+    start
+    end
+    flex-start
+    flex-end
+
+    normal
+
+    space-between
+    space-around
+    space-evenly
+    stretch
+
+    - align-items:
+    normal
+    stretch
+
+    center
+    start 
+    end
+    flex-start
+    flex-end
+    self-start
+    self-end
+
+    baseline
+    first baseline
+    last baseline
+    
+    - align-self
+    auto
+    normal
+
+    center
+    start 
+    end
+    flex-start
+    flex-end
+    self-start
+    self-end
+
+    baseline
+    first baseline
+    last baseline
+    stretch
+
+
+2. Flex alignment
+    - align-content:
+    center
+    flex-start
+    flex-end
+
+    normal
+
+    space-between
+    space-around
+    space-evenly
+    stretch
+
+    - align-items:
+    normal
+    stretch
+
+    center
+    flex-start
+    flex-end
+
+    baseline
+    
+    - align-self:
+    auto
+    normal
+
+    center
+    flex-start
+    flex-end
+
+    baseline
+    stretch
+
+3. all property
+    - all:
+    inherit
+    unset
+    initial
+    (no all property)
+
+4. animation shorthand
+    - animation:
+    aName
+    1s (duration)
+    1s (delay)
+    forwards backwards none both
+    infinite (iteration count)
+    running paused
+    normal alternate reverse alternate-reverse
+    ease ease-in ease-out ease-in-out linear jumps(4, end/jump-end/start/jump-start/none/both) jump-start jump-end cubic-bezier(1, 1, 1, 1)
+
+5. animation longhand
+    - animation-name: aName1, aName2
+    - animation-duration: 4s, 2s
+    - animation-delay: 
+    - animation-fill-mode:
+    - animation-iteration-count:
+    - animation-play-state:
+    - animation-direction: 
+    - animation-timing-function:

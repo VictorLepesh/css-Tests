@@ -1,0 +1,18 @@
+// The methods and properties I use in order.
+1. Object()
+2. Object.assign()
+3. Object.create() Object.defineProperty() Object.getOwnPropertyDescriptor()
+4. Object.defineProperties() Object.getOwnPropertyDescriptors()
+    - get(), set(), enumerable, comfigurable
+    - value, enumerable, configurable, writable
+5. Object.entries
+6. Object.freeze() Object.isFrozen()
+7. Object.setPrototypeOf() Object.getPrototypeOf() objectInstance.isPrototypeOf()
+8. Object.getOwnPropertyNames() Object.keys() Object.values()
+9. Object.getOwnPropertySymbols()
+10. Object.is()
+11. Object.seal() Object.isSealed()
+12. Object.freeze() Object.isFrozen()
+13. objectInstance.constructor Object.prototype.valueOf
+14. objectInstance.hasOwnProperty() objectInstance.propertyIsEnumerable() objectInstance.toString()
+15. objectInstance.toLocaleString()

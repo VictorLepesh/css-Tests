@@ -1,0 +1,8 @@
+6. We don't know the last arguement for every
+
+We don't know what polyfill is
+
+Below needs polyfill
+.every 
+.copyWithin
+.filter

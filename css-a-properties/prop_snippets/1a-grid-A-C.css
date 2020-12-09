@@ -1,0 +1,57 @@
+.container {
+    display: grid;
+    width: 200px;
+    height: 200px;
+    grid-template-columns: 1fr 1fr 1fr; /* 1 value per child/element */
+    grid-auto-rows: 10px;
+    grid-gap: 3px;
+    background-color: aqua;
+    align-content: space-evenly;
+}
+
+.box:nth-child(even) {
+    background-color: grey;
+}
+.box {
+    background-color: #000000;
+}
+/* align-items is up to down
+    justify-items is left to right */
+/* cross axis Y, main axis X */
+/* align-content with grid can work with start, end, flex-start and flex-end as values */
+/* align-content: stretch; will not work with grid-auto-rows and grid-auto-columns used */
+/* align-content: normal; will stretch if there is nothing effecting height in */
+
+
+/*
+***ANSWERS***
+
+NO LEFT/RIGHT VALUES
+align-content: center;
+align-content: start;
+align-content: end;
+align-content: flex-start;
+align-content: flex-end;
+
+NORMAL ALIGNMENT(the default)
+align-content: normal;
+
+DISTRIBUTED ALIGNMENT:
+align-content: space-between;
+align-content: space-around;
+align-content: space-evenly;
+align-content: stretch;
+*/
+
+
+/*** ONLY IN FIREFOX ***/
+/*
+OVERFLOW ALIGNMENT
+align-content: safe center;
+align-content: unsafe center;
+
+BASELINE ALIGNMENT 
+align-content: baseline;
+align-content: first baseline;
+align-content: last baseline;
+*/
