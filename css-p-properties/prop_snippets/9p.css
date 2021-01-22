@@ -1,0 +1,70 @@
+.container {
+    background: slategrey;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-auto-rows: 50px;
+    place-content: end right;
+    place-items: end left;
+}
+.box {
+    background: grey;
+    min-width: 25px;
+    min-height: 25px;
+}
+.box:nth-child(odd) {
+    background: darkgrey;
+}
+.box2 {
+    place-self: start right;
+}
+
+
+/* 1st value is for aligning, 2nd is for justifying */
+
+/* top doesn't work */
+/*
+***ANSWERS***
+    place-content order
+start start
+start left
+
+start center
+
+center end
+center right
+
+end end
+end right
+
+end center
+
+end start
+end left
+
+center start
+center left
+
+center center
+
+space-around space-around
+space-between space-between
+space-evenly space-evenly
+
+stretch stretch
+normal normal
+*/
+
+/*  place-content - other
+space-evenly right
+*/
+
+/*  place-items order
+just for first value 
+baseline
+first baseline
+last baseline
+*/
+/*place-self order
+same as place-items and place-content except no space-etc values */

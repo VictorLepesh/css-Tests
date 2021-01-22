@@ -1,0 +1,97 @@
+/* Define the container div, the cube div, and a generic face */
+.container {
+    width: 100px;
+    height: 100px;
+    margin: 75px 0 0 75px;
+    border: none;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    perspective-origin: bottom right;
+    perspective: 250px;
+    transform-style: preserve-3d;
+}
+
+.face {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    line-height: 100px;
+    font-family: sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+/* Define each face based on direction */
+.front {
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateZ(50px);
+}
+
+.back {
+    background: limegreen(0, 255, 0, 1);
+    color: black;
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.right {
+    background: darkred;
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.left {
+    background: darkblue;
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.top {
+    background: yellow;
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    background: purple;
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+
+/* Answers 
+perspective: none;
+
+perspective: 250px;
+perspective: 350px;
+perspective: 500px;
+perspective: 650px;
+perspective: 3.5em;
+*/
+
+/*      perspective-origin:
+    ***ANSWERS***
+top left
+top 
+top right
+right
+bottom right
+bottom
+bottom left
+left
+
+50% 50%
+200% 200% far top left
+-200% 200% far top right
+-200% -200% far bottom right
+200% -200% far bottom left
+*/
+
+
+/* perspective-origin values (unique per example) */
+/* there are 2 values x-position and y-position:
+ x-position = Indicates the position of the abscissa of the vanishing point. It can have one of the following values
+    y-position= = Indicates the position of the ordinate of the vanishing point. It can have one of the following values:
+*/  

@@ -1,0 +1,30 @@
+a[href="http://example.com"] {
+    pointer-events: none;
+}
+/* you will not be able to go to example.com because you can't click on it with your "pointer" */
+a[href="https://developer.mozilla.org"] {
+    pointer-events: none;
+}
+
+
+
+/* pointer-events = You can disable elements from being interacted with the mouse */
+
+/* auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | inherit */
+
+/* Answers
+pointer-events: auto; -- this is the default
+pointer-events: none;
+
+All SVG only 
+pointer-events: visiblePainted; 
+pointer-events: visibleFill;    
+pointer-events: visibleStroke;  
+pointer-events: visible;        
+pointer-events: painted;        
+pointer-events: fill;           
+pointer-events: stroke;         
+pointer-events: all;    
+
+SVG support isn't good.
+*/

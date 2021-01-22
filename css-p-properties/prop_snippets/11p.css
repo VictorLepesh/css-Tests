@@ -1,0 +1,49 @@
+.box {
+    background: slategrey;
+    width: 100px;
+    height: 100px;
+}
+.box:nth-child(odd) {
+    background: darkgrey;
+}
+.box2 {
+    position: relative;
+    left: 100px;
+}
+.box3 {
+    position: absolute; /* final values are determined */
+    left: 100px;
+}
+.box4 {
+    position: sticky;
+    top: 0px;
+    left: 500px; /* can't use right: for some reason */
+}
+.box5 {
+    position: fixed;
+    top: 100px;
+    left: 500px;
+}
+
+/* 
+https://youtu.be/jx5jmI0UlXU
+*/
+/* 
+position: static;       is default, follows HTML flow children in order.
+position: relative;     same as static except, will hold empty space as if were static if moved. NOT commonly used with left, right, bottom, top
+position: absolute;     Completely removed from document flow, and static nodes won't recognize it, aka won't hold empty space. Commonly used with top, left, right, bottom  
+position: sticky;
+position: fixed;
+*/
+
+/* 
+position: static;       is default, follows HTML flow children in order.
+position: relative;     same as static except, will hold empty space as if were static if moved. NOT commonly used with left, right, bottom, top
+
+absolute --     Completely removed from document flow, and static nodes won't recognize it, aka won't hold empty space. Commonly used with top, left, right, bottom  
+         -- If you want it to be positioned absolutely within it's parent then it cannot be static, but it cann be all the others.
+
+position: sticky;   -- Combination of both fix and relative.  Starts off relative but becomes fixed when you scroll passed a certain point.
+position: fixed;    -- Same as absolute except, it won't hold empty space no matter what position value its parent has, it's parent always becomes the entire page.
+                    -- Can scroll with it after 
+*/

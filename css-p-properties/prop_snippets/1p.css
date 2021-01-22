@@ -1,0 +1,31 @@
+h4 {
+    background: slategrey;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+}
+.box1 {
+    box-sizing: content-box; /*default, content counted*/
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+.box2 {
+    box-sizing: border-box; 
+    padding: 10px 15px 20px 50px; /* T R B L */
+}
+/* Shorthand padding: always takes OPPOSITE sides value for empty values */
+.box3 {
+    padding: 10px 40px 40px /* T RL B */
+}
+.box4 {
+    padding: 10px 40px; /* TB RL */
+}
+
+/* box model
+margin:
+border: 
+padding: 
+height: + width:
+*/

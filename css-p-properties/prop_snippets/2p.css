@@ -1,0 +1,22 @@
+div {
+    background: slategrey;
+    width: 120px;
+    height: 300px;
+}
+.box1 {
+    background: grey;
+    writing-mode: vertical-rl;
+    padding-block: 70px 400px; /*first value bottom of text, top value upper part of text */
+}
+.box2 {
+    background: darkgrey;
+    writing-mode: horizontal-tb;
+    padding-block: 20px 30px;
+}
+.box3 {
+    background: darkgrey;
+    padding-block-start: 20px; /* bottom of content */
+    padding-block-end: 40px; /* top of content */
+}
+
+/* padding: overwrites padding-block: */

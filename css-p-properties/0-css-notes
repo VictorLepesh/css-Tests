@@ -1,0 +1,16 @@
+https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
+https://www.html5rocks.com/en/tutorials/speed/rendering/
+
+1. padding padding-top padding-right padding-bottom padding-left
+2. padding-block padding-block-start padding-block-end - not compatible with Opera
+3. padding-inline padding-inline-start padding-inline-end
+4. page-break-after  -- need to know CSS regions, pages and columns
+5. page-break-before    -- need to know CSS regions, pages and columns
+6. page-break-inside
+7. paint-order
+8. perspective persepective-origin -- Need better notes
+9.  grid: place-content, place-items, place-self
+10. pointer-events -- Add JS script to disable events https://youtu.be/eh_nsXI66CM
+11. position -- need way to have stick stick to right side. 
+
+CUT used to be 11. flex: place-content, place-items, place-self -- Impractable if applicable since flex can only go in ONE direction
