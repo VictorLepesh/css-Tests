@@ -1,1 +1,45 @@
 
+Use all methods in individual scripts.
+Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+
+Constructor
+1. Array()      Array.of() -- 2nd is method not constructor but similar
+
+Static methods
+2. Array.from()
+3. Array.isArray()
+
+Instance Methods 
+4. array.@@iterator Ex: arr[Symbol.iterator]
+5. Array.@@species Ex: Array[Symbol.species]()
+6. array.@@unscopables Ex: Array.prototype[Symbol.unscopables] -- This is a property but fits here
+7. Array.prototype.concat()
+8. Array.prototype.copyWithin()
+9. Array.prototype.entries()    Array.prototype.values()    Array.prototype.keys()      
+10. Array.prototype.every()     Array.prototype.some()      Array.prototype.filter()
+11. Array.prototype.fill()
+12. Array.prototype.find()      Array.prototype.findIndex()     Array.prototype.includes()
+13. Array.prototype.flat()      Array.prototype.flatMap()
+14. Array.prototype.forEach()   Array.prototype.map()
+15. Array.prototype.indexOf()   Array.prototype.lastIndexOf()
+16. Array.prototype.join()      Array.prototype.toString()
+17. Array.prototype.pop()     Array.prototype.push()  Array.prototype.shift()     Array.prototype.unshift()
+18. Array.prototype.reduce()
+19. Array.prototype.reduceRight()
+20. Array.prototype.reverse()       Array.prototype.sort()
+21. Array.prototype.slice()     Array.prototype.splice()
+22. Array.prototype.toLocaleString()
+
+Instance Properties 
+23. Array.prototype.length
+
+
+
+
+
+------
+
+Static methods
+2. Array.from()
+Array.prototype.keys()      Array.prototype.values()    Array.prototype.entries()   array.@@iterator Ex: arr[Symbol.iterator]

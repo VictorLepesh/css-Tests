@@ -17,3 +17,11 @@ console.log(arr1);
 let arr2 = Array(3); // doesn't limit length, just sets empty slots. 
 console.log(arr2);
 console.log(arr2.length)
+
+
+//////
+
+const arr1 = Array.of(7);
+console.log(arr1);
+const arr2 = Array.of(10, 20, 30);
+console.log(arr2);
