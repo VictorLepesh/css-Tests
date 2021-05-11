@@ -12,7 +12,7 @@
 9. Object.getOwnPropertySymbols()
 10. Object.is()
 11. Object.seal() Object.isSealed()
-12. Object.freeze() Object.isFrozen()
+12. Object.preventExtensions() Object.isExtensible()
 13. objectInstance.constructor Object.prototype.valueOf
 14. objectInstance.hasOwnProperty() objectInstance.propertyIsEnumerable() objectInstance.toString()
 15. objectInstance.toLocaleString()
