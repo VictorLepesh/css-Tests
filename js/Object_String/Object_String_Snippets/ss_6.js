@@ -1,0 +1,1 @@
+console.log('devour a whale'.includes('whale'), 'lu'.includes('bee'));

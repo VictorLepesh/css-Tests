@@ -1,0 +1,1 @@
+console.log('what is the end?'.endsWith('end', 15)); // you can limit length with 2nd argument

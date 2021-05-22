@@ -1,0 +1,8 @@
+body {
+    background-image: url(2b.jpg);
+    background-attachment: local, scroll; /* scroll, fixed, local, and  local, scroll  and  scroll, local */
+}
+p {
+    font-size: 1.4em;
+    margin: 200px;
+}
