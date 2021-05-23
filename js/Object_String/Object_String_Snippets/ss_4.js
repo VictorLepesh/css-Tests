@@ -1,4 +1,5 @@
-const str = 'quick';
-console.log(str.charAt(3), str.charCodeAt(3));
-const icons = '☃★♲'
-console.log(icons.codePointAt(2));
+const str = 'beeee';
+const itt = str[Symbol.iterator]();
+for (e of itt) {
+    console.log(e);
+};

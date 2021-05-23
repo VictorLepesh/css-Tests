@@ -1,4 +1,1 @@
-const str = 'stew';
-console.log(str.padEnd(30, '.'));
-console.log(str.padStart(60, '.'))
-console.log(str);
+console.log('\u0041\u006d\u00e9\u006c\u0069\u0065'.normalize());

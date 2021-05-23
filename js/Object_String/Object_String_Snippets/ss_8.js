@@ -1,4 +1,4 @@
-const str = 'big big big big small small big big';
-console.log(str.indexOf('small'));
-console.log(str.indexOf('small', 20));
-console.log('last index of ' + str.lastIndexOf('small')) // has 2nd arg too
+const str = 'some way home';
+console.log(str.startsWith('way', 5), str.endsWith('hom', 12)) 
+// endsWith 2nd argument defaults to str.length, you limit the length with this
+// startsWith 2nd argument defaults to 0

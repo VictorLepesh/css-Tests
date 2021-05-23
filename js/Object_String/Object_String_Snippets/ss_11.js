@@ -1,2 +1,7 @@
-const name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
-console.log(name1.normalize());
+const str = 'Big Modern House with many burners.';
+const regex = /[A-Z]/g;
+console.log(str.match(regex));
+const itt = str.matchAll(regex); // returns array
+console.log(Array.from(itt));
+console.log(str.search(/[^\w\s]/g));
+console.log(str.split(' ', 5));

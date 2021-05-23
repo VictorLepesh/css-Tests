@@ -1,1 +1,1 @@
-console.log('what is the end?'.endsWith('end', 15)); // you can limit length with 2nd argument
+console.log('sweet bee'.includes('bee'), 'Please excuse john smith'.substring(0, 7), 'sweet leaf'.slice(0, 7));

@@ -6,24 +6,27 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glo
 Constructor
 1. Array()      Array.of()      Array.from() -- 2nd is method not constructor but similar
 
+Eceteria
+2. Escape sequences: \0 \' \" \\ \n \r \v p \t \b \f 
+
 Static methods
-2. String.fromCharCode()    String.fromCodePoint()      String.raw()
+3. String.fromCharCode()    String.fromCodePoint()      String.raw()
 
 Instance Methods 
-3. string.@@iterator Ex: str[Symbol.iterator]();
-4. String.prototype.charAt()    String.prototype.charCodeAt()      String.prototype.codePointAt()
-5. String.prototype.concat()       + operator       \ escape sequence (to continue line break)
-6. String.prototype.includes()      String.prototype.substring()       String.prototype.slice()
-7. String.prototype.endsWith()      String.prototype.startsWith()
-8. String.prototype.indexOf()       String.prototype.lastIndexOf()
-9. String.prototype.localeCompare()
-10. String.prototype.match()    String.prototype.matchAll()     String.prototype.search()       String.prototype.split()
-11. String.prototype.normalize()
-12. String.prototype.padEnd()   String.prototype.padStart()     String.prototype.repeat()
-13. String.prototype.replace()      String.prototype.replaceAll()
-14. String.prototype.toLocaleLowerCase()    String.prototype.toLocaleUpperCase()    String.prototype.toLowerCase()      String.prototype.toUpperCase()
-15. String.prototype.toString()     String.prototype.valueOf()
-16. String.prototype.trim()     String.prototype.trimStart()        String.prototype.trimEnd()
+4. string.@@iterator Ex: str[Symbol.iterator]();
+5. String.prototype.charAt()    String.prototype.charCodeAt()      String.prototype.codePointAt()
+6. String.prototype.concat()       + operator       \ escape sequence (to continue line break)
+7. String.prototype.includes()      String.prototype.substring()       String.prototype.slice()
+8. String.prototype.endsWith()      String.prototype.startsWith()
+9. String.prototype.indexOf()       String.prototype.lastIndexOf()
+10. String.prototype.localeCompare()
+11. String.prototype.match()    String.prototype.matchAll()     String.prototype.search()       String.prototype.split()
+12. String.prototype.normalize()
+13. String.prototype.padEnd()   String.prototype.padStart()     String.prototype.repeat()
+14. String.prototype.replace()      String.prototype.replaceAll()
+15. String.prototype.toLocaleLowerCase()    String.prototype.toLocaleUpperCase()    String.prototype.toLowerCase()      String.prototype.toUpperCase()
+16. String.prototype.toString()     String.prototype.valueOf()
+17. String.prototype.trim()     String.prototype.trimStart()        String.prototype.trimEnd()
 
 Instance Properties 
-17. String.prototype.length
+18. String.prototype.length
