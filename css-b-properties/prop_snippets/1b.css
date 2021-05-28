@@ -5,14 +5,14 @@
     grid-template-columns: repeat(4, 1fr);
 }
 .box {
-    background-image: url(1b.svg);
+    background-image: url(0b.svg);
     background-size: 100px;
     background-repeat: no-repeat;
     width: 125px;
     height: 125px;
 }
 .box1 {
-    filter: url(1b.svg);
+    filter: url(0b.svg);
 }
 .box2 {
     filter: blur(5px); 

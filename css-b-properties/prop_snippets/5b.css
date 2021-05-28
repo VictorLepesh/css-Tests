@@ -1,7 +1,7 @@
 .box {
     height: 500px;
-    width: 20pxp;
-    background-image: url(5b.jpg), url(1b.svg);
+    width: 20px;
+    background-image: url(0b.jpg), url(0b.svg);
     border: solid 10px hsla(1, 37%, 35%, 0.404);
     padding: 20px;
     background-repeat: repeat-y, no-repeat;

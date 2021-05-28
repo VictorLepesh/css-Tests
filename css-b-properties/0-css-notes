@@ -13,4 +13,7 @@ B-Properties
 8. border (shorthand and longhand)
 9. border-spacing border-collapse border-style
 10. bottom
-11. 
+11. box-decoration-break    -webkit-box-decoration-break
+12. box-shadow
+13. box-sizing
+14. break-after     break-before    break-inside

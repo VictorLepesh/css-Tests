@@ -2,7 +2,7 @@ html, body {
     margin: 0px;
 }
 .container {
-    background-image: url(2b.jpg);
+    background-image: url(0bg.jpg);
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -16,7 +16,7 @@ html, body {
     margin: 10px;
 }
 .box1 {
-    backdrop-filter: url(2b.jpg);
+    backdrop-filter: url(0bg.jpg);
 }
 .box2 {
     backdrop-filter: blur(5px); 
@@ -31,7 +31,7 @@ html, body {
     backdrop-filter: drop-shadow(0 1.2rem 300px red) /* offset-x offset-y blur-radius color */
 }
 .box5:first-child {
-    filter: url(1b.svg);
+    filter: url(0b.svg);
     width: 50%;
     height: 50%;
 }

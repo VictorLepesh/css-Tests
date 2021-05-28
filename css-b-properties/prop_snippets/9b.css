@@ -1,0 +1,23 @@
+table {
+    border-spacing: 1em .2em; /* x y */
+    border: 1px solid orange;
+    border-collapse: separate; /* separate is initial/default */
+}
+  
+td {
+    width: 1.5em;
+    height: 1.5em;
+    background: grey;
+    border-style: dashed solid;
+}
+
+/* 
+    border-spacing VALUES
+<length> for x <length> for y
+*/
+
+/*
+    border-collapse VALUES
+separate (the default/initial)
+collapse
+*/

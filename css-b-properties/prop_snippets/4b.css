@@ -1,5 +1,5 @@
 body {
-    background-image: url(2b.jpg);
+    background-image: url(0bg.jpg);
     background-attachment: local, scroll; /* scroll, fixed, local, and  local, scroll  and  scroll, local */
     background-color: hsl(239, 56%, 48%);
     background-blend-mode: soft-light; 
@@ -36,10 +36,10 @@ normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, har
 
 /*
 for background-blend-mode to work, examples
-1. background-image: url(2b.jpg), linear-gradient(teal, red);
-2.  background-image: url(2b.jpg)
+1. background-image: url(0bg.jpg), linear-gradient(teal, red);
+2.  background-image: url(0bg.jpg)
     background-color: teal;
-3.  background-image: url(2b.jpg), url(2b.jpg);
+3.  background-image: url(0bg.jpg), url(0bg.jpg);
 */
 
 /*

@@ -10,7 +10,7 @@ Eceteria
 2. Escape sequences: \0 \' \" \\ \n \r \v p \t \b \f 
 
 Static methods
-3. String.fromCharCode()    String.fromCodePoint()      String.raw()
+3. String.fromCharCode()    String.fromCodePoint()      String.raw() -- Move first 2 functions to 5.
 
 Instance Methods 
 4. string.@@iterator Ex: str[Symbol.iterator]();

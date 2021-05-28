@@ -1,3 +1,6 @@
 const str = new String('big');
-console.log(str.toString(), str.valueOf());
-console.log(str);
+const obj = {id: 'big'};
+const arr = ['id', 'big'];
+console.log(str.toString(), obj.toString(), arr.toString());
+console.log(str.valueOf(), obj.valueOf(), arr.valueOf());
+console.log(String(str), String(obj), String(arr));
