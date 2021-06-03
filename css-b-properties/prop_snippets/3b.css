@@ -8,11 +8,11 @@
     transform-style: preserve-3d;
 }
 .box1 {
-    backface-visibility: visible; /* you can see the back "face" basically */
+    backface-visibility: initial; /* visible is default */
 }
 .box2 {
-    backface-visibility: hidden; /* you cannot see the back */
+    backface-visibility: visible; /* you can see the back "face" basically */
 }
 .box3 {
-    backface-visibility: initial; /* visible is default */
+    backface-visibility: hidden; /* you cannot see the back */
 }
