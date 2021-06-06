@@ -1,0 +1,8 @@
+9. for localeCompare 
+"=== looks for exactly the same bytes in the strings.
+
+.localeCompare() allows for the fact that you may want to ignore certain differences in the strings (such as puncutation or diacriticals or case) and still allow them to compare the same or you want to ignore certain differences when deciding which string is before the other. And, it provides lots of options to control what comparison features are or are not used."
+    - https://stackoverflow.com/questions/33489250/comparing-strings-with-localecompare-vs
+
+11. For normalize, it's used because there are multiple unicodes for the same character in languages.  For example there could be one unicode character or two.  If there's two then chances are there's a Diacritic mark, which is a symbol above the character. Russian й for example.
+    - https://youtu.be/tyEK4Wa2r3o

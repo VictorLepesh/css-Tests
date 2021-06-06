@@ -1,18 +1,96 @@
-.box {
-    background: red;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    transition: all 2s linear;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
+/* Adds notes for this */
+p {
+    height: 500px;
+    width: 20px;
+    background-image: url(0b.jpg), url(0b.svg);
+    border: solid 10px hsla(1, 37%, 35%, 0.404);
+    padding: 20px;
+    background-repeat: repeat-y, no-repeat;
+    background-position: 50% 50%, 25% 50%;
+    background-size: 75px, 150px;
+    background-origin: border-box;
+    background-clip: border-box;
 }
-.box1 {
-    backface-visibility: initial; /* visible is default */
-}
-.box2 {
-    backface-visibility: visible; /* you can see the back "face" basically */
-}
-.box3 {
-    backface-visibility: hidden; /* you cannot see the back */
-}
+
+
+/* color url position-x position-y / size repeat attachment origin clip */
+
+/*
+background-blend-mode
+default: normal
+to brighten: lighten
+to darken: darken
+overlay: focuses on neutral colors, hides 50% greys, increases contrasts
+screen: makes black disapear, white show more
+multiply: keeps dark spots, hides the whites
+
+color: meets halfway
+color-dodge: like screen, keeps light
+color-burn: like mutliply, keeps dark
+soft-light: 
+hard-light: same as overlay
+difference: makes darker parts background color
+exclusion: same as difference
+hue: makes it red
+saturation: makes it darker and blurry
+luminosity: similar to lighten
+
+VALUES:
+normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity 
+*/
+
+/*
+for background-blend-mode to work, examples
+1. background-image: url(0bg.jpg), linear-gradient(teal, red);
+2.  background-image: url(0bg.jpg)
+    background-color: teal;
+3.  background-image: url(0bg.jpg), url(0bg.jpg);
+*/
+
+/*
+background-color: 
+
+VALUES:
+brown;
+#74992e;
+rgb(255, 255, 128);
+rgba(255, 255, 128, .5);
+hsl(50, 33%, 25%);  hue - angle of color
+hsla(50, 33%, 25%, .75);
+currentcolor
+transparent
+*/
+
+
+
+
+/* backround-repeat 
+no-repeat
+repeat
+repeat-x
+repeat-y
+round - repeat to rounded number
+space - puts space in between
+*/
+
+/* background-origin
+content-box
+padding-box
+border-box
+*/
+
+/* 
+background-position-x
+background-position-y
+*/
+
+/* background-position
+top left, top, top right, right, bottom right, bottom, bottom left, left, center
+
+50% 50%
+
+x, y, y-offset
+x, x-offset, y, y-offset
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+*/

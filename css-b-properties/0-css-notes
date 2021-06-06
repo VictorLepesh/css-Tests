@@ -3,17 +3,17 @@ https://www.html5rocks.com/en/tutorials/speed/rendering/
 
 B-Properties
 
-1. filter
-2. backdrop-filter
-3. backface-visibility
-4. background-attachment background-image
-5. background-blend-mode   background-clip     background-color    background-origin       background-position     background-position-x   background-position-y   background-repeat       background-size
-6. background
-7. block-size
-8. border (shorthand and longhand)
-9. border-spacing border-collapse border-style
-10. bottom
-11. box-decoration-break    -webkit-box-decoration-break
-12. box-shadow
-13. box-sizing
-14. break-after     break-before    break-inside
+1. filter   backdrop-filter     backface-visibility
+2. background background-blend-mode
+3. background-color     background-image    background-position     background-position-x       background-position-y       background-size     background-repeat   background-attachment       background-origin   background-clip     background-blend-mode
+4. block-size
+5. border (shorthand and longhand)
+6. border-spacing border-collapse border-style
+7. bottom
+8. box-decoration-break    -webkit-box-decoration-break
+9. box-shadow
+10. box-sizing
+11. break-after     break-before    break-inside
+
+
+

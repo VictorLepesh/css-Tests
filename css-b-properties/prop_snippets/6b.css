@@ -1,8 +1,23 @@
-.box {
-    height: 500px;
-    width: 20px;
-    background-image: url(0b.jpg), url(0b.svg);
-    border: solid 10px hsla(1, 37%, 35%, 0.404);
-    padding: 20px;
-    background: url(0b.jpg) 50% 50% border-box;
+table {
+    border-spacing: 1em .2em; /* x y */
+    border: solid orange 1px;
+    border-collapse: separate; /* separate is initial/default */
 }
+  
+td {
+    width: 1.5em;
+    height: 1.5em;
+    background: grey;
+    border-style: dashed solid;
+}
+
+/* 
+    border-spacing VALUES
+<length> for x <length> for y
+*/
+
+/*
+    border-collapse VALUES
+separate (the default/initial)
+collapse
+*/

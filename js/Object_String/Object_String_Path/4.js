@@ -1,0 +1,1 @@
+console.log(Array.from('see'[Symbol.iterator]()));

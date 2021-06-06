@@ -4,29 +4,27 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glo
 
 
 Constructor
-1. Array()      Array.of() -- 2nd is method not constructor but similar
+1. Array()      Array.of()      Array.from()-- 2nd is method not constructor but similar, 3rd is static method, similar to constructor
 
 Static methods
-2. Array.from()
-3. Array.isArray()
+2. Array.isArray()
 
 Instance Methods 
-4. array.@@iterator Ex: arr[Symbol.iterator]()
-5. Array.@@species Ex: Array[Symbol.species]()
-6. array.@@unscopables Ex: Array.prototype[Symbol.unscopables] -- This is a property but fits here
-7. Array.prototype.concat()
-8. Array.prototype.copyWithin()     Array.prototype.fill()      Array.prototype.slice()     Array.prototype.splice()
-9. Array.prototype.entries()    Array.prototype.values()    Array.prototype.keys()      
-10. Array.prototype.every()     Array.prototype.some()      Array.prototype.filter()    Array.prototype.includes()
-11. Array.prototype.find()      Array.prototype.findIndex()     
-12. Array.prototype.flat()      Array.prototype.flatMap()
-13. Array.prototype.forEach()   Array.prototype.map()
-14. Array.prototype.indexOf()   Array.prototype.lastIndexOf()
-15. Array.prototype.join()      Array.prototype.toString()
-16. Array.prototype.pop()     Array.prototype.push()  Array.prototype.shift()     Array.prototype.unshift()
-17. Array.prototype.reduce()    Array.prototype.reduceRight()
-18. Array.prototype.reverse()       Array.prototype.sort()
-19. Array.prototype.toLocaleString()
+3. array.@@iterator Ex: arr[Symbol.iterator]()
+4. Array.@@species Ex: Array[Symbol.species]()
+5. array.@@unscopables Ex: Array.prototype[Symbol.unscopables] -- This is a property but fits here
+6. Array.prototype.concat()
+7. Array.prototype.copyWithin()     Array.prototype.fill()      Array.prototype.slice()     Array.prototype.splice()
+8. Array.prototype.entries()    Array.prototype.values()    Array.prototype.keys()  
+9. Array.prototype.every()     Array.prototype.some()      Array.prototype.filter()    Array.prototype.includes() 
+10. Array.prototype.find()      Array.prototype.findIndex()     Array.prototype.indexOf()   Array.prototype.lastIndexOf()
+11. Array.prototype.flat()      Array.prototype.flatMap()
+12. Array.prototype.forEach()   Array.prototype.map()
+13. Array.prototype.join()      Array.prototype.toString()
+14. Array.prototype.pop()     Array.prototype.push()  Array.prototype.shift()     Array.prototype.unshift()
+15. Array.prototype.reduce()    Array.prototype.reduceRight()
+16. Array.prototype.reverse()       Array.prototype.sort()
+17. Array.prototype.toLocaleString()
 
 Instance Properties 
-20. Array.prototype.length
+18. Array.prototype.length

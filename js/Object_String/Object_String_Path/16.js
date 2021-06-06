@@ -1,0 +1,1 @@
+console.log('seem'.length, ''.length);

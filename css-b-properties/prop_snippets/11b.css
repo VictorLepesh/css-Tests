@@ -1,34 +1,15 @@
-
-span {
-    background: linear-gradient(to bottom right, slategrey, green);
-    box-shadow:
-      8px 8px 10px 0px red,
-      -5px -5px 5px 0px orange;
-    padding: 0em 2em;
-    border: solid 5px;
-    border-radius: 16px;
-    margin-left: 10px;
-    font: 1.5em sans-serif;
-    line-height: 2;
-    clip-path: circle(90%);
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
+h1 {
+    column-span: all;
 }
-
-
-/* to change background only in line of text, must change <span> element */
-/* 
-box-decoration-break
-    will only work in webkit, i.e 
-Values
-    slice (the default, it cuts off or "slices" then ends")
-    clone
-Effects only
-    background
-    border
-    border-image
-    box-shadow
-    clip-path
-    margin
-    padding
-*/
+article {
+    column-width: 200px;
+}
+/*h2 {
+    break-before: column;
+}*/
+p {
+    break-after: column;
+}
+figure {
+    break-inside: avoid;
+}

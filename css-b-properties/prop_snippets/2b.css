@@ -1,56 +1,21 @@
-html, body {
-    margin: 0px;
-}
-.container {
-    background-image: url(0bg.jpg);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 100px;
-}
-.box {
-    background: rgba(255, 120, 0, 0.0);
-    border: 1px solid;
-    box-sizing: border-box;
-    margin: 10px;
+p {
+    font-size: 2em;
+    border: dotted 20px cyan;
+    background: hsl(240, 100%, 50%) url(0bg.jpg) center center / cover no-repeat fixed border-box content-box;
+    background-blend-mode: saturation;
 }
 
-.box1 {
-    backdrop-filter: none;
-}
-.box2 {
-    backdrop-filter: blur(2px) opacity(.2);
-}
-.box3 {
-    backdrop-filter: brightness(0);  /* 0 to 1 for darkness, 1+ for brightness */
-}
-.box4 {
-    backdrop-filter: contrast(.2);   /*10% = dark, 300% = bright */
-}
-.box5 {
-    backdrop-filter: saturate(.2)    /* 0% 0 = grey, 50% 0.5 = darker, 100% 1 = normal, 110% 1.1 and higher = brighter */
-}
-.box6 {
-    backdrop-filter: grayscale(1);
-}
-.box7 {
-    backdrop-filter: sepia(1);   /* makes it turn reddish brown, 0 to 1 or 0% to 100%*/
-}
-.box8 {
-    backdrop-filter: invert();   /* similar to hue-rotate */
-}
-.box9 {
-    backdrop-filter: hue-rotate(180deg); /* goes to 360 deg */
-    animation: hueChange 2s infinite;
-}
-@keyframes hueChange {
-    from {
-        backdrop-filter: hue-rotate(0deg);
-    }
-    to {
-        backdrop-filter: hue-rotate(360deg);
-    }
-}
-.box10 {
-    backdrop-filter: drop-shadow(0px -20px 10px orange) grayscale(1) brightness(2) drop-shadow(0px 20px 10px blue);
-    /* drop-shadow: offset-x offset-y blur-radius color */
-}
+/* 
+    background: color url position position / size repeat attachment origin clip
+    ex: 
+- background-size: contain | cover | auto
+- if you use 1 value at the end it'll be used for both background-origin and background-clip.  If you use 2 values at the end it'll be used respectively
+- background-attach - how the image is attached to the wall of the page 
+*/
+
+/* 
+    background-blend-mode
+    <blend-mode> = normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode
+*/

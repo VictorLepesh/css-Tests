@@ -1,57 +1,23 @@
-body {
-    background-image: url(0bg.jpg);
-    background-attachment: local, scroll; /* scroll, fixed, local, and  local, scroll  and  scroll, local */
-    background-color: hsl(239, 56%, 48%);
-    background-blend-mode: soft-light; 
-    
+div {
+    background: orange;
+    font-size: 1.2em;
+    text-align: center;
+    block-size: max-content();
+    writing-mode: horizontal-tb;
 }
-p {
-    font-size: 1.4em;
-    margin: 200px;
-}
+/* block-size
+fit-content();
+max-content();
+min-content();
 
-/*
-background-blend-mode
-default: normal
-to brighten: lighten
-to darken: darken
-overlay: focuses on neutral colors, hides 50% greys, increases contrasts
-screen: makes black disapear, white show more
-multiply: keeps dark spots, hides the whites
+200px or any value
 
-color: meets halfway
-color-dodge: like screen, keeps light
-color-burn: like mutliply, keeps dark
-soft-light: 
-hard-light: same as overlay
-difference: makes darker parts background color
-exclusion: same as difference
-hue: makes it red
-saturation: makes it darker and blurry
-luminosity: similar to lighten
-
-VALUES:
-normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity 
+75%
+<length> value
 */
 
-/*
-for background-blend-mode to work, examples
-1. background-image: url(0bg.jpg), linear-gradient(teal, red);
-2.  background-image: url(0bg.jpg)
-    background-color: teal;
-3.  background-image: url(0bg.jpg), url(0bg.jpg);
-*/
-
-/*
-background-color: 
-
-VALUES:
-brown;
-#74992e;
-rgb(255, 255, 128);
-rgba(255, 255, 128, .5);
-hsl(50, 33%, 25%);  hue - angle of color
-hsla(50, 33%, 25%, .75);
-currentcolor
-transparent
+/* writing-mode
+horizontal-tb
+vertical-lr
+vertical-rl
 */

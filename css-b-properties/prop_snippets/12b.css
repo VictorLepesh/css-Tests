@@ -1,6 +1,0 @@
-.box {
-    width: 100px;
-    height: 100px;
-    background: black;
-    box-shadow: 20px 10px teal, 30px 20px 20px teal, inset 10px -5px blue, inset -10px 5px orange, -10px -10px 10px red;
-}
